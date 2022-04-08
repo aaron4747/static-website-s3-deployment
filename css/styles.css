@@ -1,0 +1,161 @@
+/* multiple font familys are imported in the index.html */
+/* if you use font size in body and h1's or elsewhere with % or em it will add it on. If you specify with px then it will remain static
+you can also use rem to avoid adding unwanted em counts.  */
+body {
+  margin: 0;
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  /* multiple fonts can be used as fall backs in case the user's browser doesnt have that font type */
+}
+
+h1 {
+  font-size: 5.625rem;
+  /* 100% is equal to 16px, or 1 em is also equal to 16px. Using percentage or em will make the characters dynamic and scale with user settings*/
+  margin: 50px auto 0 auto;
+  font-family: 'Sacramento', cursive;
+  color: #66BFBF;
+  line-height: 1.5;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5rem;
+  color: #66BFBF;
+  font-weight: normal;
+  padding-bottom: 10px;
+}
+
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #11999E;
+}
+
+hr {
+  border: dotted #EAF6F6 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+
+/*div {
+  background-color: #d8e3e7;
+}*/
+
+p {
+    line-height: 2;
+    /* changes line height for all paragraphs */
+}
+
+a{
+  color: #11999E;
+  font-family: 'Montserrat', sans-serif;
+  margin: 10px 20px;
+  text-decoration: none; /* removes underline for link */
+}
+
+a:hover {
+  color: #EAF6F6;
+}
+.top_container {
+  background-color: #EAF6F6;
+  position: relative;
+  padding-top: 100px;
+}
+
+.middle_container {
+  padding: 100px 0;
+  /* shorthand for adding margin for top/bottom and none for left/right */
+}
+
+.bottom_container {
+  padding: 50px 0 20px;
+  background-color: #66BFBF;
+}
+
+.top_cloud {
+  position: absolute;
+  right: 300px;
+  top: 50px;
+}
+
+.bottom_cloud {
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 100px auto;
+  /* centers the skill row and gives it 100px space on top and bottom */
+  text-align: left;
+}
+
+.computer_image {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.chilies_image {
+  width: 25%;
+  float: right;
+  /*only use float when necessary and when wrapping text around a certain element. Don't use for positioning. Use margin/padding for positioning */
+  margin-right: 30px;
+}
+
+.copyright {
+  color: #EAF6F6;
+  font-size: 0.75rem;
+  padding: 20px 0;
+}
+
+.profile_picture {
+  width: 10%
+}
+
+.code_skill_description {
+  clear: left;
+  /* this clears any formatting to the left of the text so in this case the float setting on the skills row */
+}
+
+.chilli_skill_description {
+  clear: right;
+}
+
+.intro {
+  margin: auto; /*centers the text*/
+  width: 30%;
+}
+
+.contact_message {
+  width: 40%;
+  margin: 40px auto 60px; /* top, left/right, bottom margin */
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 12;
+  -moz-border-radius: 12;
+  border-radius: 12px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
